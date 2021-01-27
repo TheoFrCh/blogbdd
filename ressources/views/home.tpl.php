@@ -6,9 +6,11 @@ if (empty($postsTab)): ?>
 <?php else:?>
     <?php foreach ($postsTab as $post) : ?>
        <article>
-           <?=$post['name']?> ||
-           <?=$post['title']?> ||
-           <?=$post['content']?>
+           <header>
+               <h2><?=$post['title']?></h2>
+               <p>By: <?=$post['name']?></p>
+           </header>
+           <p><?=$post['content']?></p>
        </article>
 
     <?php endforeach ?>
