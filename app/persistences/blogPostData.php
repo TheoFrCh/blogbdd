@@ -1,7 +1,7 @@
 <?php
-function lastBlogPosts($dbh)
+function lastBlogPosts($db)
 {
-    $prestab = $dbh->prepare('SELECT Author.name, Posts.title, Posts.content  
+    $prestab = $db->prepare('SELECT Author.name, Posts.title, Posts.content  
 FROM Posts
 INNER JOIN Author ON Author.idAuthor = Posts.Author_idAuthor
 ORDER BY Posts.id DESC

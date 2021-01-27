@@ -1,6 +1,6 @@
 <?php
-require 'app/persistences/blogPostData.php';
+include 'app/persistences/blogPostData.php';
 
-lastBlogPosts($dbh);
+$postsTab=lastBlogPosts($dbh);
 
-var_dump(lastBlogPosts($dbh));
+include 'ressources/views/home.tpl.php';
