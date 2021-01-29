@@ -2,5 +2,5 @@
 $user = "theo";
 $pass = "260830";
 
-$dbh = new PDO('mysql:host=localhost;dbname=Blog',$user,$pass);
+$mabdd = new PDO('mysql:host=localhost;dbname=Blog;charset=UTF8',$user,$pass);
 ?>

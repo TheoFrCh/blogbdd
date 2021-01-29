@@ -1,6 +1,5 @@
 <?php
 if (empty($postsTab)): ?>
-
   Aucune données à afficher!
 
 <?php else:?>
